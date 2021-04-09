@@ -15,6 +15,16 @@ div.nav-bar {
     background: #304353;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
 div.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
@@ -166,7 +176,7 @@ div.snapshot-box-content {
 div.box1 {
     background: #fff;
     padding: 10px 20px;
-    width: 220px;
+    width: 30%;
     height: 230px;
     margin: 10px;
     border-radius: 2px;
@@ -176,7 +186,7 @@ div.box1 {
 div.box3 {
     background: #304353;
     padding: 10px 20px;
-    width: 220px;
+    width: 40%;
     height: 230px;
     margin: 10px;
     border-radius: 2px;
@@ -190,6 +200,11 @@ div.box3 h5 {
     font-size: 1rem;
 }
 
+@media screen and (max-width:800px) {
+    .box1, .box3 {
+        width:100%;
+    }
+}
 div.circle {
     display: flex;
     margin: 0 auto;
